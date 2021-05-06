@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://yyd.iborge.cn/ -->
+<html class="js cssanimations"><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>校园通行码</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <link rel="alternate icon" type="image/png" href="./assets/i/favicon.png">
+  <link rel="stylesheet" href="./assets/amui.all.css">
+  <style>
+    ::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+    .head-fixed {
+      padding-top: 50px;
+    }
+    .head {
+      margin-bottom: 0;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+    }
+    .get {
+      background: #1E5B94;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .get-title {
+      font-size: 200%;
+      border: 2px solid #fff;
+      padding: 20px;
+      display: inline-block;
+    }
+    .get-btn {
+      background: #fff;
+    }
+    .detail {
+      background: #fff;
+    }
+
+    .detail-h2 {
+      text-align: center;
+      font-size: 150%;
+      margin: 40px 0;
+    }
+
+    .detail-h3 {
+      color: #1f8dd6;
+    }
+
+    .detail-p {
+      color: #7f8c8d;
+    }
+
+    .detail-mb {
+	  padding-top:15px;
+	  padding-bottom:15px;
+      margin-bottom: 15px;
+	  background:#FFF;
+    }
+
+    .hope {
+      background: #0bb59b;
+      padding: 50px 0;
+    }
+
+    .hope-img {
+      text-align: center;
+    }
+
+    .hope-hr {
+      border-color: #149C88;
+    }
+
+    .hope-title {
+      font-size: 140%;
+    }
+
+    .about {
+      background: #fff;
+      padding: 40px 0;
+      color: #7f8c8d;
+    }
+
+    .about-color {
+      color: #34495e;
+    }
+
+    .about-title {
+      font-size: 220%;
+      padding: 30px 0 50px 0;
+      text-align: center;
+    }
+
+    .footer p {
+      color: #7f8c8d;
+      margin: 0;
+      padding: 15px 0;
+      text-align: center;
+      background: #2d3e50;
+    }
+    .footer p a{
+      color: #7f8c8d;
+    }
+  </style>
+</head>
+<body class="head-fixed">
+<div class="head" style="background-color: #fff; height:50px;">
+  <div style="height:40px;line-height:40px;  margin-top:5px; border-bottom:3px solid #2F7DFB;text-align:center;text-align:center;width:40%;margin-left:5%;color:#878787">
+    申请表单
+  </div>
+</div>
+<div id="wrapper" style="background:#F2F2F2">
+  <div style="height:50px; width:100%;box-sizing:border-box;padding:12px;padding-bottom:0">
+    <div style="background:#fff;border-radius: 1px;line-height:40px;text-indent: 4px;font-weight: bold;"><span class="am-icon-file-text-o" style="color:#2F7DFB;margin-right:7px;"></span><span style="font-size:0.9em">校园通行码</span></div>
+  </div>
+  <div style="height:45px;line-height:45px;text-indent:12px;color:#8B8B8B">
+    入校时间
+  </div>
+  <div style="height:45px;line-height:45px;text-indent:12px;color:#606063;background:#fff;font-size: 1.3em;font-weight:bold;" id="time">2021-05-06 16:08</div>
+  <div style="height:45px;line-height:45px;text-indent:12px;color:#8B8B8B">
+    头像
+  </div>
+  <div class="avatar" style="box-sizing: border-box; padding-top: 20px;padding-bottom: 20px;background: #fff;text-align: center;">
+    <img src="./assets/yyd.jpg" alt="头像" style="height:230px;border-radius: 3px;">
+  </div>
+  <div style="height:45px;line-height:45px;text-indent:12px;color:#8B8B8B">
+    通行码
+  </div>
+  <div class="avatar" style="box-sizing: border-box; padding-top: 20px;padding-bottom: 20px;background: #fff;text-align: center;">
+    <img src="./assets/greencode.jpg" alt="头像" style="height:90px;">
+  </div>
+  <div style="height:45px;line-height:45px;text-indent:12px;color:#8B8B8B">
+    姓名，单位，校门
+  </div>
+  <div style="box-sizing:border-box;padding:12px;line-height:20px;color:#606063;background:#fff;font-size: 1.3em;font-weight:bold;" id="time">
+    教职工，孙冰溶，物理海洋教育部重点实验室，崂山校区西门
+  </div>
+</div>
+<!-- <footer class="footer">
+  <p>© 2014-2020 Joseph 版权所有 All Rights Resverd.<br>
+  <a href="http://beian.miit.gov.cn" target="_blank">鲁ICP备16005726号-2</a></p>
+</footer> -->
+  <script src="./assets/zepto.min.js"></script>
+  <script src="./assets/amui.min.js"></script>
+  <script>
+    
+$(document).ready(function(){
+  var now = new Date();
+        var year = now.getFullYear(); //得到年份
+        var month = now.getMonth();//得到月份
+        var date = now.getDate();//得到日期
+        var day = now.getDay();//得到周几
+        var hour = now.getHours();//得到小时
+        var minu = now.getMinutes();//得到分钟
+        var sec = now.getSeconds();//得到秒
+　　     var MS = now.getMilliseconds();//获取毫秒
+        var week;
+        month = month + 1;
+        if (month < 10) month = "0" + month;
+        if (date < 10) date = "0" + date;
+        if (hour < 10) hour = "0" + hour;
+        if (minu < 10) minu = "0" + minu;
+        if (sec < 10) sec = "0" + sec;
+        var arr_week = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+        week = arr_week[day];
+        var time = "";
+        time = year + "-" + month + "-" + date + " " +hour + ":" + minu ;
+        //当前日期赋值给当前日期输入框中（jQuery easyUI）
+        $("#time").html(time);
+})
+  </script>
+
+<div class="am-dimmer" data-am-dimmer=""></div></body></html>
